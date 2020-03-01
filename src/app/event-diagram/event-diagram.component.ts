@@ -14,9 +14,15 @@ export class EventDiagramComponent implements OnInit {
 
   ngOnInit() {
   }
-  getStyleObject = () => {
-    return { 'top': this.eventProps.start + 'px', 'width': this.eventProps.width + 'px', 'height': (this.eventProps.end - this.eventProps.start) + 'px', 'margin-left': this.eventProps.startingPoint + 'px'}
 
+  /* This function will return the style object for each event */
+  getStylesForEvent = () => {
+    return {
+      top: this.eventProps.start + 'px',
+      width: this.eventProps.width + 'px',
+      height: (this.eventProps.end - this.eventProps.start) + 'px',
+      'margin-left': (this.eventProps.startingPoint === 0 ? this.eventProps.startingPoint : this.eventProps.startingPoint + 10) + 'px'
+    };
   }
 
 }
