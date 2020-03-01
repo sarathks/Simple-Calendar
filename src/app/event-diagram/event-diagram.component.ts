@@ -21,7 +21,7 @@ export class EventDiagramComponent implements OnInit {
       top: this.eventProps.start + 'px',
       width: this.eventProps.width + 'px',
       height: (this.eventProps.end - this.eventProps.start) + 'px',
-      'margin-left': (this.eventProps.startingPoint === 0 ? this.eventProps.startingPoint : this.eventProps.startingPoint + 10) + 'px'
+      'margin-left': this.eventProps.startingPoint + 'px'
     };
   }
 

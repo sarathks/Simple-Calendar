@@ -7,7 +7,8 @@ export const environment = {
   startTime: 9,
   endTime: 21,
   range: 13,
-  renderingWidth: 600
+  renderingWidth: 600,
+  conflictsGap: 10
 };
 
 /*
