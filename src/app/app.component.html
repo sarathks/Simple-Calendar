@@ -1,0 +1,10 @@
+<div class="event-manager">
+  <div class="event-manager--timer">
+    <div *ngFor="let time of timeInterval" class="event-manager--timer--times">
+      {{time === 12 ? 12 : time%12}} {{time >= 12 ? 'PM' : 'AM'}}
+    </div>
+  </div>
+  <div class="event-manager--content">
+      <app-event-diagram *ngFor="let event of arrayToBeRendered" [eventProps]="event" [eventInfo]="eventContent"></app-event-diagram >
+  </div>
+</div>

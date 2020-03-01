@@ -1,0 +1,24 @@
+.event-map{
+  background:#ffff;
+  border-left: 5px solid #b1ffb1;
+  position: absolute;
+  &--text-common{
+    margin: 0;
+    padding-left: 5px;
+    font-family: ubuntu;
+  }
+  &-item{
+    @extend .event-map--text-common;
+    color: #017056;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  &-location{
+    @extend .event-map--text-common;
+    color: #6d6666;
+    margin-top: 5px;
+    font-size: 12px;
+
+  }
+
+}
