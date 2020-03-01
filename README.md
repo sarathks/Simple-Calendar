@@ -28,6 +28,6 @@ Typescript         | Programming Language (3.5.3)
 
 ### Clone the repo
 ```shell
-
+git clone https://github.com/sarathks/Simple-Calendar.git
 ```
  
