@@ -71,8 +71,7 @@ export class AppComponent {
   /* This function will calculate starting point */
   calculateStartingPoint = (collidingEvents, iterator) => {
     for (let pointer = iterator + 1; pointer < collidingEvents.length; pointer++) {
-      collidingEvents[pointer].startingPoint = collidingEvents[pointer - 1].width + collidingEvents[pointer - 1].startingPoint
-      + environment.conflictsGap;
+      collidingEvents[pointer].startingPoint = collidingEvents[pointer - 1].width + collidingEvents[pointer - 1].startingPoint;
     }
   }
 

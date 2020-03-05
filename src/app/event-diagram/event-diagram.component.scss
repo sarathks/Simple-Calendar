@@ -1,11 +1,18 @@
 .event-map{
   background:#ffff;
   border-left: 5px solid #b1ffb1;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
   position: absolute;
+  overflow-y: auto;
   &--text-common{
     margin: 0;
     padding-left: 5px;
     font-family: ubuntu;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &-item{
     @extend .event-map--text-common;
