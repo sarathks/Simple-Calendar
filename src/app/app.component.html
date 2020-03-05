@@ -1,8 +1,8 @@
 <div class="event-manager">
   <div class="event-manager--timer">
     <div *ngFor="let time of timeInterval" class="event-manager--timer--times">
-      <span>{{time === 12 ? 12 : time%12}} </span><span class="event-manager--common">{{time >= 12 ? 'PM' : 'AM'}}</span><br />
-      <span class="event-manager--timer--half">{{time === 12 ? 12 : time%12}}:30</span>
+      <span>{{time === 12 ? 12 : time%12}}:00 </span><span class="event-manager--common">{{time >= 12 ? 'PM' : 'AM'}}</span><br />
+      <span *ngIf="time !== 21" class="event-manager--timer--half">{{time === 12 ? 12 : time%12}}:30</span>
     </div>
   </div>
   <div class="event-manager--content">
